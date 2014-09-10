@@ -47,6 +47,19 @@ table {
 	border-spacing: 0;
 }
 
-body{
-	background:red;
+div{
+	border:1px solid red;
+}
+
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
+}
+.top-navigation > .content {
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
+}
+.logo {
+	margin:15px 0 0 15px;
 }
