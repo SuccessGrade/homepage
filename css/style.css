@@ -129,6 +129,9 @@ a:link{
 /* ------------------ */
 .top-navigation {
     background-color: #fff;
+    position: fixed;
+	z-index: 1;
+	width: 100%;
 }
 .top-navigation > .content {
     height: 70px;
@@ -166,7 +169,7 @@ a:link{
 /* Introduction Area Styles */
 /* ------------------------ */
 .section-introduction{
-	background: url("../img/bg-graphic.jpg") no-repeat center top;
+	background: url("../img/bg-graphic.jpg") no-repeat 0 bottom;
 	background-size: cover;
 	text-align: center;
 	color: white;
@@ -185,13 +188,34 @@ a:link{
 	font-size: 1.5em;
 	color:#FFF;
 }
-
-.scroll-down{
-	text-indent: -9999px;
-	background: url("../img/arrow-down.png") no-repeat center;
-	padding: 20px 0;
-	margin: -90px auto 0;
+.scroll-down img{
 	position: absolute;
+	padding: 20px 0;
+	left:50%;
+	-webkit-animation: scroll-bounce 1.8s infinite; /* Safari 4+ */
+	-moz-animation:    scroll-bounce 1.8s infinite; /* Fx 5+ */
+	-o-animation:      scroll-bounce 1.8s infinite; /* Opera 12+ */
+	animation:         scroll-bounce 1.8s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes scroll-bounce {
+  0%   { bottom: 35px; }
+  50% { bottom: 10px; }
+  100%   { bottom: 35px; }
+}
+@-moz-keyframes scroll-bounce {
+  0%   { bottom: 35px; }
+  50% { bottom: 10px; }
+  100%   { bottom: 35px; }
+}
+@-o-keyframes scroll-bounce {
+  0%   { bottom: 35px; }
+  50% { bottom: 10px; }
+  100%   { bottom: 35px; }
+}
+@keyframes scroll-bounce {
+  0%   { bottom: 35px; }
+  50% { bottom: 10px; }
+  100%   { bottom: 35px; }
 }
 
 
@@ -204,15 +228,14 @@ a:link{
 	color: #1D1E21;
 }
 .section-cases h2{
-	font-size: 2.4em;
-	font-weight: 100;
+	font-size: 2.7em;
 	margin-bottom: 2em;
 }
 .section-cases article{
 	display: inline-block;
 	width: 32.33333%;
 	padding:.8em;
-	padding-top: 8em;
+	padding-top: 9em;
 }
 .section-cases article.device{
 	background: url("../img/icons-devices.svg") no-repeat top;
@@ -228,7 +251,6 @@ a:link{
 }
 .section-cases article h3{
 	font-size: 1.4em;
-	font-weight: 100;
 	margin-bottom: 1em;
 }
 
