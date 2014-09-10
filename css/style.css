@@ -169,7 +169,7 @@ a:link{
 /* Introduction Area Styles */
 /* ------------------------ */
 .section-introduction{
-	background: url("../img/bg-graphic.jpg") no-repeat 0 bottom;
+	background: url("../img/bg-graphic-intro.jpg") no-repeat 0 bottom;
 	background-size: cover;
 	text-align: center;
 	color: white;
