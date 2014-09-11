@@ -282,17 +282,17 @@ a:link, a:visited{
 	background: url("../img/bg-graphic-sharing.jpg") no-repeat 0 bottom;
 	background-size: cover;
 	min-height: 800px;
-	padding: 8em 0;
+	padding: 7em 0;
 }
-.section-karma-go article{
+.section-karma-go aside{
 	width:30%;
 	max-width: 350px;
 }
-.section-karma-go article h3{
+.section-karma-go aside h3{
 	color:#F15A29;
 	font-size: 1.2em;
 }
-.section-karma-go article p{
+.section-karma-go aside p{
 	text-shadow:0 0.5px 0 #FFF;
 }
 
@@ -301,14 +301,67 @@ a:link, a:visited{
 /* Footer Section */
 /* ------------------ */
 footer{
-	min-height:600px;
+	padding: 4em 0;
+	font-size: 0.9rem;
 }
-footer ul.icons{
+section.footer-row{
+	padding:15px 0 35px;
+	overflow:hidden;
+}
+section .footer-col{
+	float:left;
+}
+section div.biz{
+	width:20%;
+}
+section div.links{
+	width:50%;
+}
+section div.links ul{
+	width:32.3333333333%;
+	display:inline-table;
+}
+section div.links ul li{
+	margin-bottom:12px;
+}
+section div.links ul li.header{
+	font-weight: 400;
+	color:#1D1E21;
+	margin-bottom:15px;
+}
+section div.newsletter{
+	width:30%;
+}
+section div.newsletter h4{
+	font-weight: 400;
+	color:#1D1E21;
+	margin-bottom:15px;
+}
+section div.newsletter input[type=text]{
+	border:none;
+	padding:20px 140px 20px 20px;
+	border:1px solid #CACCD1;
+	border-radius: 6px;
+}
+section div.newsletter input[type=submit]{
+	border:none;
+	padding:16px 20px 19px 20px;
+	border:1px solid #CACCD1;
+	border-radius: 6px;
+	background:#FFF;
+	margin-left:-60px;
+	font-size: 1rem;
+	color:#F15A29;
+}
+section div.newsletter input[type=submit]:hover{
+	cursor: pointer;
+}
+ul.icons{
 	text-align: center;
 	border-top:1px solid #EAEBEC;
 	padding:15px 0;
 }
-footer ul.icons li.header{
+ul.icons li.header{
 	width:100%;
 	display: block;
 	text-align: center;
@@ -318,7 +371,7 @@ footer ul.icons li.header{
 	font-weight:400;
 	margin-bottom:15px;
 }
-footer ul.icons li{
+ul.icons li{
 	width: 42px;
 	height: 42px;
 	display:inline-block;
