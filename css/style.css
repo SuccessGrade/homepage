@@ -329,7 +329,7 @@ section div.links ul li.header{
 	color:#1D1E21;
 	margin-bottom:15px;
 }
-section div.links ul li a:link, section div.links ul li a:visited{
+section div.links ul li a:link, section div.links ul li a:visited, section div.links ul li a{
 	color:#1D1E21;
 }
 section div.newsletter{
