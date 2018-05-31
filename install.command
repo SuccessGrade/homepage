@@ -10,3 +10,4 @@ npm install --save-dev gulp-rename
 npm install --save-dev gulp-notify
 npm install --save-dev gulp-imagemin
 npm install --save-dev imagemin-pngcrush
+npm install --save-dev gulp-webserver

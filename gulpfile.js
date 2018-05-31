@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     notify = require("gulp-notify"),
     imagemin = require('gulp-imagemin'),
-    pngcrush = require('imagemin-pngcrush');
+    pngcrush = require('imagemin-pngcrush'),
+    webserver = require('gulp-webserver');
     
 
 
@@ -115,6 +116,12 @@ gulp.task('watch', function(){
     gulp.watch('src/scripts/*.js', ['scripts']);
     gulp.watch('src/styles/**/*.scss', ['styles']);
     gulp.watch('src/*.html', ['html']);
+    gulp.src('.')
+      .pipe(webserver({
+        livereload: true,
+        directoryListing: true,
+        open: true
+      }));
 });
 
 
